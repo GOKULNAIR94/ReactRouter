@@ -14,7 +14,7 @@ restService.use(bodyParser.json());
 
 
 app.use(express.static(__dirname + '/dist/'));
-app.use('/src/assets', express.static(__dirname + '/src/'));
+app.use('/src', express.static(__dirname + '/src/'));
 
 restService.listen((process.env.PORT || 9000), function() {
   console.log("Server up and listening");
